@@ -5,6 +5,7 @@ import { UsersModule } from './users/users.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './users/auth/auth.module';
+import { ChatModule } from './chat/chat.module';
 
 @Module({
   imports: [UsersModule,
@@ -20,7 +21,8 @@ import { AuthModule } from './users/auth/auth.module';
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       
     }),
-    AuthModule
+    AuthModule,
+    ChatModule
   ],
   controllers: [AppController],
   providers: [AppService],
