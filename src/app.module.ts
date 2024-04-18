@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './users/auth/auth.module';
 import { ChatModule } from './chat/chat.module';
+import { MessageModule } from './message/message.module';
 
 @Module({
   imports: [UsersModule,
@@ -22,7 +23,8 @@ import { ChatModule } from './chat/chat.module';
       
     }),
     AuthModule,
-    ChatModule
+    ChatModule,
+    MessageModule
   ],
   controllers: [AppController],
   providers: [AppService],
