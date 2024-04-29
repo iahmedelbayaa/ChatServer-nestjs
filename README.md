@@ -50,7 +50,7 @@ This is a real-time chat application built using NestJS, MongoDB, and Socket.IO.
 - NestJS
 - MongoDB
 - Socket.IO
-- Mongoose
+- TypeORM
 
 ## Contributing
 
